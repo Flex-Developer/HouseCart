@@ -4,6 +4,7 @@
 		<title>House Cart</title>
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 		<link rel="stylesheet" href="css/style.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<!-- <meta name="viewport" content="width=device-width"> -->
 	</head>
 
@@ -68,7 +69,7 @@
 								</h3>
 								<img src="img/Features_title.svg" alt="">
 							</div>
-							<div class="features-row">
+							<div class="features-row" data-aos="fade-up" data-aos-duration="1000">
 								<div class="features-column">
 									<div class="features-column__image">
 										<img  src="img/Features_01.svg" alt="">
@@ -109,10 +110,10 @@
 				<section class="steps" id="howitworks">
 					<div class="container">
 						<div class="steps-row">
-							<div class="steps-columns">
-								<img class="steps-columns__img"src="../img/video.jpg" alt="">
+							<div class="steps-columns" data-aos="fade-right" data-aos-duration="1000">
+								<img class="steps-columns__img"src="img/video.jpg" alt="">
 							</div>
-							<div class="steps-columns">
+							<div class="steps-columns" data-aos="fade-left" data-aos-duration="1000">
 								<div class="steps-title__h3 title--black">
 									3 Easy Steps
 								</div> 	
@@ -163,7 +164,7 @@
 					<div class="container">
 						<div class="grid-body">
 							<div class="grid-row">
-								<div class="grid-column">									
+								<div class="grid-column" data-aos="flip-down" data-aos-duration="1000">									
 									<ul class="grid-column-list">
 										<li class="grid-column__text -first">
 											 House
@@ -179,7 +180,7 @@
 										</li>
 									</ul>
 								</div>
-								<div class="grid-column">									
+								<div class="grid-column" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="500">									
 									<ul class="grid-column-list">
 										<li class="grid-column__text">
 											Housecart
@@ -195,7 +196,7 @@
 										</li>
 									</ul>
 								</div>
-								<div class="grid-column">									
+								<div class="grid-column" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1000">									
 									<ul class="grid-column-list">
 										<li class="grid-column__text">
 											Traditional real estate
@@ -216,7 +217,7 @@
 					</div>
 				</section>
 				<section class="subscribe">				
-					<div class="subscribe-content">						
+					<div class="subscribe-content" data-aos="zoom-in" data-aos-duration="1000">						
 						<h2 class="subscribe__title title">
 								Subscribe
 						</h2>
@@ -238,7 +239,7 @@
 				<section class="contact" id="contactus">
 					<div class="container">
 						<div class="contact-row">
-							<div class="contact-column">
+							<div class="contact-column" data-aos="zoom-in-right" data-aos-duration="1000">
 								<div class="contact-column-sellhouse">
 									<div class="contact-column-sellhouse__title">
 										Sell Your House Instantly
@@ -246,21 +247,21 @@
 									<div class="contact-column-sellhouse__subtitle">
 										Simply tell us about your house and get a guaranteed  cash offer within 24 hours										
 									</div>
-									<input type="text" class="contact-column-sellhouse__text" holder="Submit your house details">
+									<input type="text" class="contact-column-sellhouse__text" placeholder="Submit your house details" type="text" name="info" value="">
 									<button class="contact-column-sellhouse__btn btn">Get your offer</button>
 								</div>
 							</div>
-							<div class="contact-column">
+							<div class="contact-column" data-aos="zoom-in-left" data-aos-duration="1000">
 								<div class="contact-column-form">
 									<div class="contact-column-form__title">
 										Get in Touch
 									</div>
-									<input type="text" class="contact-column-form__text" holder="Your name">
-									<input type="text" class="contact-column-form__text" holder="Your email address">
-									<input type="text" class="contact-column-form__text" holder="Your phone number">
-									<input type="text" class="contact-column-form__text" holder="Subject">
-									<textarea name="" id="" cols="30" rows="10" class="contact-column-form__message" holder="Leave a message"></textarea>
-									<button class="contact-column-form__submit btn">Submit Now</button>
+									<input type="text" class="contact-column-form__text" placeholder="Your name" type="text" name="name" value="">
+									<input type="text" class="contact-column-form__text" placeholder="Your email address" type="email" name="phone" value="">
+									<input type="tel" class="contact-column-form__text" placeholder="Your phone number" type="phone" name="phone" value="">
+									<input type="text" class="contact-column-form__text" placeholder="Subject" type="text" name="subject" value="">
+									<textarea name="" id="" cols="30" rows="10" class="contact-column-form__message" placeholder="Leave a message" type="text" name="message" value=""></textarea>
+									<button class="contact-column-form__submit btn" type="submit" method="get">Submit Now</button>
 								</div>
 							</div>
 						</div>
@@ -273,5 +274,10 @@
 	</div>
 </footer>					
 		</div>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+    AOS.init();
+  </script>
+		<!-- <script src="app.js"></script> -->
 	</body>
 </html>
